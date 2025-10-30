@@ -1,0 +1,11 @@
+C:\Users\hadik\Downloads\backend\backend\src\main\java\com\gamehub\backend\config\SecurityConfig.java
+C:\Users\hadik\Downloads\backend\backend\src\main\java\com\gamehub\backend\config\WebSocketConfig.java
+C:\Users\hadik\Downloads\backend\backend\src\main\java\com\gamehub\backend\controller\AuthController.java
+C:\Users\hadik\Downloads\backend\backend\src\main\java\com\gamehub\backend\controller\GameController.java
+C:\Users\hadik\Downloads\backend\backend\src\main\java\com\gamehub\backend\controller\UserController.java
+C:\Users\hadik\Downloads\backend\backend\src\main\java\com\gamehub\backend\GameHubBackendApplication.java
+C:\Users\hadik\Downloads\backend\backend\src\main\java\com\gamehub\backend\model\Score.java
+C:\Users\hadik\Downloads\backend\backend\src\main\java\com\gamehub\backend\model\User.java
+C:\Users\hadik\Downloads\backend\backend\src\main\java\com\gamehub\backend\repository\ScoreRepository.java
+C:\Users\hadik\Downloads\backend\backend\src\main\java\com\gamehub\backend\repository\UserRepository.java
+C:\Users\hadik\Downloads\backend\backend\src\main\java\com\gamehub\backend\websocket\GameSocketHandler.java
