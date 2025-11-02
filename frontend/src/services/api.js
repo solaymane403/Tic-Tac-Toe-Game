@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-// Change this to your backend URL
-const BASE_URL = 'https://vsrwljl6-8081.uks1.devtunnels.ms';
 
-// Create axios instance with default config
+const BASE_URL = process.env.REACT_APP_API_URL || 'https://vsrwljl6-8081.uks1.devtunnels.ms';
+
+
 const axiosInstance = axios.create({
   baseURL: BASE_URL,
   headers: {
@@ -11,7 +11,7 @@ const axiosInstance = axios.create({
   },
 });
 
-// Add token to requests if available
+
 axiosInstance.interceptors.request.use((config) => {
   const user = JSON.parse(localStorage.getItem('gamehub_user') || '{}');
   if (user.token) {
