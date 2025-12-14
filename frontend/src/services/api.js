@@ -34,6 +34,27 @@ const api = {
     }
   },
 
+  // Mock login for development / testing without backend
+  // Usage: call `api.mockLogin(username)` from the UI when you want a local-only login flow.
+  mockLogin: async (username) => {
+    return new Promise((resolve, reject) => {
+      // simulate network latency
+      setTimeout(() => {
+        if (!username || username.trim().length === 0) {
+          reject(new Error('Username is required for mock login'));
+          return;
+        }
+
+        const user = {
+          userId: `mock_${username.toLowerCase()}_${Date.now()}`,
+          username,
+          token: 'mock-token',
+        };
+        resolve(user);
+      }, 600);
+    });
+  },
+
   register: async (username, password) => {
     try {
       const response = await axiosInstance.post('/auth/register', {
